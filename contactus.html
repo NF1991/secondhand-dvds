@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+      </style>
+      <link rel="stylesheet" href="css/style.css" />
+      <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/assets/fontawesome/brands.js"></script>
+  <script src="/assets/fontawesome/solid.js"></script>
+  <script src="/assets/fontawesome/fontawesome.js"></script>
+      <!-- icons -->
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- This is the logo and search bar -->
+    <div class="upper-nav">
+        <div class="logo">
+            <a href="/index.html"><img src="./img/logo.png" alt="Logo"/></a>
+      </div>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="fa-2x">
+        <span class="fa-layers fa-fw">
+           <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+           <span class="fa-layers-counter fa-layers-top-right" id="count">0</span>
+        
+     </span>
+  </div>
+      </div>
+
+      <!-- This is the navbar -->
+    <div class="navbar" id="navbar">
+        <div class="nav-links-left">
+           <div class="links-left">
+              <div class="genres-dropdown">
+                 <button class ="dropdownbtn">Film & TV<i class='bx bx-chevron-down arrow bx-fade-down-hover genres-arrow'></i></button>
+                 <div class="dropdown-content">
+                    <div class="row">
+                       <div class="column">
+                          <h3>Genres</h3>
+                          <li><a href="#">Anime</a></li>
+                          <li><a href="#">Cartoons</a></li>
+                          <li><a href="#">Comedy</a></li>
+                          <li><a href="#">Documentaries</a></li>
+                          <li><a href="#">Drama</a></li>
+                          <li><a href="#">Horror</a></li>
+                          <li><a href="#">LGBT+</a></li>
+                          <li><a href="#">Musicals</a></li>
+                          <li><a href="#">Sci-fi</a></li>
+                          <li><a href="#">Superheroes</a></li>
+                          <li><a href="#">Thrillers</a></li>
+                          <li><a href="#">World Cinema</a></li>
+                       </div>
+                       <div class="column">
+                          <h3>Franchises</h3>
+                          <li><a href="#">All Franchises</a></li>
+                          <li><a href="#">Disney</a></li>
+                          <li><a href="#">DC</a></li>
+                          <li><a href="#">Doctor Who</a></li>
+                          <li><a href="#">Marvel</a></li>
+                          <li><a href="#">Star Wars</a></li>
+                       </div>
+                       <div class="column">
+                          <h3>Deals</h3>
+                          <li><a href="#">All Deals</a></li>
+                          <li><a href="#">DVD two for £15</a></li>
+                          <li><a href="#">Blu-Ray two for £20</a></li>
+                          <li><a href="#">Disney Deals</a></li>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="genres-dropdown">
+                 <button class ="dropdownbtn">Popular<i class='bx bx-chevron-down arrow bx-fade-down-hover atoz-arrow'></i></button>
+                 <div class="dropdown-content">
+                    <div class="row">
+                       <div class="column">
+                          <h3>Trending in Film & TV</h3>
+                          <li><a href="#">Christmas</a></li>
+                          <li><a href="#">Halloween</a></li>
+                          <li><a href="#">Fantasy</a></li>
+                          <li><a href="#">Marvel</a></li>
+                          <li><a href="#">DC</a></li>
+                       </div>
+                       <div class="column">
+                          <h3>Pre-owned Chart</h3>
+                          <li><a href="#">DVD Pre-owned Chart</a></li>
+                          <li><a href="#">Blu-Ray Pre-owned Chart</a></li>
+                          <li><a href="#">Shop All Pre-Owned Chart</a></li>
+                       </div>
+                       <div class="column">
+                          <h3>Collections</h3>
+                          <li><a href="#">All</a></li>
+                          <li><a href="#">Award Winners</a></li>
+                          <li><a href="#">BAFTA Nominations</a></li>
+                          <li><a href="#">Oscar Nominations</a></li>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="genres-dropdown">
+                 <button class ="dropdownbtn">A to Z<i class='bx bx-chevron-down arrow bx-fade-down-hover atoz-arrow'></i></button>
+                 <div class="dropdown-content">
+                    <div class="atoz">
+                       <h3>Search from A to Z</h3>
+                       <li><a href="#">0-9</a></li>
+                       <li><a href="#">A</a></li>
+                       <li><a href="#">B</a></li>
+                       <li><a href="#">C</a></li>
+                       <li><a href="#">D</a></li>
+                       <li><a href="#">E</a></li>
+                       <li><a href="#">F</a></li>
+                       <li><a href="#">G</a></li>
+                       <li><a href="#">H</a></li>
+                       <li><a href="#">I</a></li>
+                       <li><a href="#">J</a></li>
+                       <li><a href="#">K</a></li>
+                       <li><a href="#">L</a></li>
+                       <li><a href="#">M</a></li>
+                       <li><a href="#">N</a></li>
+                       <li><a href="#">O</a></li>
+                       <li><a href="#">P</a></li>
+                       <li><a href="#">Q</a></li>
+                       <li><a href="#">R</a></li>
+                       <li><a href="#">S</a></li>
+                       <li><a href="#">T</a></li>
+                       <li><a href="#">U</a></li>
+                       <li><a href="#">V</a></li>
+                       <li><a href="#">W</a></li>
+                       <li><a href="#">X</a></li>
+                       <li><a href="#">Y</a></li>
+                       <li><a href="#">Z</a></li>
+                       <div class="viewall">
+                          <li><a href="#">View All</a></li>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="nav-links-right">
+           <div class="links-right">
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Login</a></li>
+           </div>
+        </div>
+     </div>
+     </div>
+     </nav>
+
+     <!-- This is the cart -->
+     <main>
+
+     </main>
+
+
+
+
+
+
+     <footer>
+        <div class="footer-row">
+           <div class="footer-column">
+              <h3>Help & Information</h3>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">UK Delivery</a></li>
+              <li><a href="#">International Delivery</a></li>
+           </div>
+           <div class="footer-column">
+           <h3>About Us</h3>
+           <li><a href="#">Terms & Conditions</a></li>
+           <li><a href="#">Company Information</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+           <li><a href="#">Cookie Policy</a></li>
+           </div>
+           <div class="footer-column">
+              <h3>Keep in Touch</h3>
+              <div class="socials">
+                 <a href="#"><img src="/img/facebook.png" alt="Facebook"></a>
+                 <a href="#"><img src="/img/twitter.png" alt="Twitter"></a>
+                 <a href="#"><img src="/img/youtube.png" alt="Youtube"></a>
+                 <a href="#"><img src="/img/Instagram.png" alt="Instagram"></a>
+              </div>
+           </div>
+           <div class="footer-column">
+              <h3>Newsletter</h3>
+              <div class="newsletter">
+                 <p>Sign Up to our Newsletter!</p>
+                 <br>
+                 <div class="email">
+                 <input type="email" id="email" name="email" placeholder="Enter your Email Address">
+                 </div>
+              </div>
+           </div>
+         </div>
+         <div class="copyright">
+           <p>Copyright &copy; Devflix 2022</p>
+         </div>
+     </footer>
+
+    <script src="js/index.js"></script>     
+</body>
+</html>

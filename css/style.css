@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar styling */
+/* Main navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+  padding: 0 20px;
+}
+
+/* Navbar links styling */
+.navbar a {
+  float: left;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 9x;
+  height: 35px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+/* button styling */
+.dropdownbtn {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #121212;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  height: 80px;
+}
+
+/* button hover */
+.dropdownbtn:hover {
+  border-bottom: #CC7722 solid 4px;
+}
+
+/* Navbar hover */
+.navbar a:hover {
+  color: #CC7722;
+}
+
+/* Styling for links of the left of the navbar */
+.navbar .links-left {
+  list-style: none;
+  display: flex;
+
+}
+
+/* Styling for links of the right of the navbar */
+.navbar .links-right {
+  list-style: none;
+  display: flex;
+
+}
+
+/* The dropdown container */
+.genres-dropdown {
+float: left;
+overflow: hidden;
+}
+
+/* Dropdown button */
+.genres-dropdown .dropbtn {
+font-size: 16px;
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font: inherit; /* Important for vertical align on mobile phones */
+margin: 0; /* Important for vertical align on mobile phones */
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #121212;
+width: 100%;
+left: 0;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.genres-dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+float: left;
+width: 33.33%;
+padding: 10px;
+background-color: #121212;
+height: 530px;
+}
+
+/* Style links inside the columns */
+.column a {
+float: none;
+color: white;
+padding: 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.column h3 {
+color:#CC7722;
+padding: 16px;
+font-size: 25px;
+border-bottom: #CC7722 solid 1px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+.atoz h3 {
+  color:#CC7722;
+  padding: 16px;
+  font-size: 25px;
+  border-bottom: #CC7722 solid 1px;
+}
+
+.atoz li a {
+  text-align: center;
+  padding-top: 40px;
+  height: 100px;
+}
+
+/* Logo and search bar styling */
+  .logo {
+    display: inline-block;
+    padding-left: 40px;
+  }
+
+  .upper-nav {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    padding-top: 30px;
+    background-color: #121212;
+  }
+
+  .search {
+    flex-grow: 2;
+  }
+
+  /* Cart Styling */
+  
+ .fa-2x {
+display: flex;
+align-items: center;
+padding: 10px;
+margin-top: -22px;
+margin-right: 30px;
+margin-bottom: 10px;
+ }
+
+
+/* icon styling */
+
+.fa-cart-shopping {
+  color: #CC7722;
+  font-size: 25px;
+  border: #CC7722 1px solid;
+  padding: 7px;
+
+}
+
+
+.fa-layers-counter {
+  background-color: #725af8;
+  
+} 
+
+.fa-layers-counter:hover {
+  background-color: white;
+  color: #121212;
+
+}
+
+
+/* Style the search box inside the navigation bar */
+.search input[type=text] {
+    float: right;
+    padding: 10px;
+    width:30vw;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    
+
+}
+
+
+
+
+/* Product cards */
+
+  /* Float four columns side by side */
+  .card-column {
+    float: left;
+    width: 25%;
+    padding:  10px;
+    display: none;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .card-row {
+    margin: 0 30px;
+  }
+  
+  /* Clear floats after the columns */
+  .card-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    border: #121212 solid 1px;
+    height: 460px;
+    width: 330px;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+    
+    
+  }
+
+  .card img {
+    max-height: 250px;
+    max-width: 15vw;
+    padding: 20px;
+    position: relative;
+}
+
+ .card-column:nth-child(1),
+ .card-column:nth-child(2),
+ .card-column:nth-child(3),
+ .card-column:nth-child(4),
+ .card-column:nth-child(5),
+ .card-column:nth-child(6),
+ .card-column:nth-child(7),
+ .card-column:nth-child(8){
+  display: inline-block;
+
+}
+
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover {
+    color: #CC7722;
+}
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+
+.checked {
+    
+    color: #CC7722;
+    
+  }
+
+  .review-link {
+    text-decoration: none;
+  }
+
+  .cartbtn button {
+    background-color: #CC7722;
+    border: #CC7722;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .cartbtn button:hover {
+    background-color: #725af8;
+    
+  }
+
+  .cartbtn a:hover {
+    color:#121212;
+  }
+
+
+  /* load more button */
+  .loadMore {
+  width: 150px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: #CC7722;
+  transition: .3s;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .loadMore:hover {
+    background-color:#725af8;
+  }
+
+  /* Footer styling */
+
+  .footer-column {
+    float: left;
+    width: 25%;
+padding: 10px;
+background-color: #121212;
+height: 400px;
+  }
+
+  .footer-column h3 {
+    color:#CC7722;
+padding: 16px;
+font-size: 25px;
+border-bottom: #CC7722 solid 1px;
+
+  }
+
+  .footer-column li {
+    list-style: none;
+  }
+  .footer-column a {
+    float: none;
+   color: white;
+padding: 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+  }
+
+  .footer-column a:hover {
+    color:#CC7722;
+  }
+
+  .socials {
+    display: flex;
+    
+  }
+
+  .socials img {
+    height: auto;
+    max-width: 60px
+  }
+  
+  /* Clear floats after the columns */
+  .footer-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .email input[type=email] {
+    float: right;
+    padding: 10px;
+    width:21vw;
+    border: none;
+    margin-top: 8px;
+    margin-right: 22px;
+    font-size: 17px;
+
+}
+
+.newsletter p {
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+}
+
+.copyright {
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+/* slider styling */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+.dots {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 15px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+  /* mediaqueries */
+
+ 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+  .column h3 {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+  .column h3 {
+    text-align: center;
+  }
+
+  .navbar a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+}
+
+@media screen and (max-width: 280px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+  .column h3 {
+    text-align: center;
+  }
+
+  .navbar a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .footer-column {
+    width: 100%;
+  }
+}
+
+/* Responsive card columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 767px) {
+  .card-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card img {
+      height: 900px;
+      max-width: 500px;
+  }
+}
+
+
+/* Responsive card columns - two column layout on small screens */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .card-column {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .card img {
+      height: 900px;
+      max-width: 500px;
+  }
+}
+
+/* Responsive card columns - three column layout on big screens */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .card-column {
+    width: 33%;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width:auto;
+  }
+  .card img {
+      height: 900px;
+      max-width: 500px;
+  }
+}
+
+/* Responsive card columns - four column layout on large screens */
+@media screen and (min-width: 1200px) {
+  .card-column {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width:auto;
+  }
+  
+  
+}
+
+

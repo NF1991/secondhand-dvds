@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devflix</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="/assets/fontawesome/brands.js"></script>
+<script src="/assets/fontawesome/solid.js"></script>
+<script src="/assets/fontawesome/fontawesome.js"></script>
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <!-- This is the logo and search bar -->
+    <div class="upper-nav">
+      <div class="logo">
+      <a href="/index.html"><img src="./img/logo.png" alt="Logo"/></a>
+    </div>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="fa-2x">
+      <span class="fa-layers fa-fw">
+         <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+         <span class="fa-layers-counter fa-layers-top-right" id="count">0</span>
+      
+   </span>
+</div>
+    </div>
+
+    <!-- This is the navbar -->
+    <div class="navbar" id="navbar">
+      <div class="nav-links-left">
+         <div class="links-left">
+            <div class="genres-dropdown">
+               <button class ="dropdownbtn">Film & TV<i class='bx bx-chevron-down arrow bx-fade-down-hover genres-arrow'></i></button>
+               <div class="dropdown-content">
+                  <div class="row">
+                     <div class="column">
+                        <h3>Genres</h3>
+                        <li><a href="#">Anime</a></li>
+                        <li><a href="#">Cartoons</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Documentaries</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">LGBT+</a></li>
+                        <li><a href="#">Musicals</a></li>
+                        <li><a href="#">Sci-fi</a></li>
+                        <li><a href="#">Superheroes</a></li>
+                        <li><a href="#">Thrillers</a></li>
+                        <li><a href="#">World Cinema</a></li>
+                     </div>
+                     <div class="column">
+                        <h3>Franchises</h3>
+                        <li><a href="#">All Franchises</a></li>
+                        <li><a href="#">Disney</a></li>
+                        <li><a href="#">DC</a></li>
+                        <li><a href="#">Doctor Who</a></li>
+                        <li><a href="#">Marvel</a></li>
+                        <li><a href="#">Star Wars</a></li>
+                     </div>
+                     <div class="column">
+                        <h3>Deals</h3>
+                        <li><a href="#">All Deals</a></li>
+                        <li><a href="#">DVD two for £15</a></li>
+                        <li><a href="#">Blu-Ray two for £20</a></li>
+                        <li><a href="#">Disney Deals</a></li>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="genres-dropdown">
+               <button class ="dropdownbtn">Popular<i class='bx bx-chevron-down arrow bx-fade-down-hover atoz-arrow'></i></button>
+               <div class="dropdown-content">
+                  <div class="row">
+                     <div class="column">
+                        <h3>Trending in Film & TV</h3>
+                        <li><a href="#">Christmas</a></li>
+                        <li><a href="#">Halloween</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Marvel</a></li>
+                        <li><a href="#">DC</a></li>
+                     </div>
+                     <div class="column">
+                        <h3>Pre-owned Chart</h3>
+                        <li><a href="#">DVD Pre-owned Chart</a></li>
+                        <li><a href="#">Blu-Ray Pre-owned Chart</a></li>
+                        <li><a href="#">Shop All Pre-Owned Chart</a></li>
+                     </div>
+                     <div class="column">
+                        <h3>Collections</h3>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Award Winners</a></li>
+                        <li><a href="#">BAFTA Nominations</a></li>
+                        <li><a href="#">Oscar Nominations</a></li>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="genres-dropdown">
+               <button class ="dropdownbtn">A to Z<i class='bx bx-chevron-down arrow bx-fade-down-hover atoz-arrow'></i></button>
+               <div class="dropdown-content">
+                  <div class="atoz">
+                     <h3>Search from A to Z</h3>
+                     <li><a href="#">0-9</a></li>
+                     <li><a href="#">A</a></li>
+                     <li><a href="#">B</a></li>
+                     <li><a href="#">C</a></li>
+                     <li><a href="#">D</a></li>
+                     <li><a href="#">E</a></li>
+                     <li><a href="#">F</a></li>
+                     <li><a href="#">G</a></li>
+                     <li><a href="#">H</a></li>
+                     <li><a href="#">I</a></li>
+                     <li><a href="#">J</a></li>
+                     <li><a href="#">K</a></li>
+                     <li><a href="#">L</a></li>
+                     <li><a href="#">M</a></li>
+                     <li><a href="#">N</a></li>
+                     <li><a href="#">O</a></li>
+                     <li><a href="#">P</a></li>
+                     <li><a href="#">Q</a></li>
+                     <li><a href="#">R</a></li>
+                     <li><a href="#">S</a></li>
+                     <li><a href="#">T</a></li>
+                     <li><a href="#">U</a></li>
+                     <li><a href="#">V</a></li>
+                     <li><a href="#">W</a></li>
+                     <li><a href="#">X</a></li>
+                     <li><a href="#">Y</a></li>
+                     <li><a href="#">Z</a></li>
+                     <div class="viewall">
+                        <li><a href="#">View All</a></li>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="nav-links-right">
+         <div class="links-right">
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Login</a></li>
+         </div>
+      </div>
+   </div>
+   </div>
+   </nav>
+      
+
+      
+     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+   <!-- Full-width images with number and caption text -->
+   <div class="mySlides fade">
+     <img src="/img/slider1.jpg" style="width:100%">
+   </div>
+ 
+   <div class="mySlides fade">
+     <img src="/img/slider2.jpg" style="width:100%">
+   </div>
+ 
+   <div class="mySlides fade">
+     <img src="/img/slider3.jpg" style="width:100%">
+   </div>
+ 
+   <!-- Next and previous buttons -->
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+   <!-- The dots/circles -->
+ <div class = "dots" style="text-align:center">
+   <span class="dot" onclick="currentSlide(1)"></span>
+   <span class="dot" onclick="currentSlide(2)"></span>
+   <span class="dot" onclick="currentSlide(3)"></span>
+ </div>
+ </div>
+ 
+ 
+ 
+
+
+    <!-- This is the main section with products -->
+    <section class="main-section">
+      <div class="card-row">
+        <div class="card-column">
+          <div class="card">
+            <img src="/img/ash vs evil dead.jpg" alt="Ash vs Evil Dead">
+            <a href="/ashvsevildead.html"><h3>Ash vs Evil Dead - (Season One)</h3></a>
+             <h3>£6.69</h3>
+             <div class="stars">
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <a href="#" class="review-link">(2)</a>
+            </div>
+            <div class="cartbtn">
+            <button class="add-cart cart1">Add to Cart</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="card-column">
+          <div class="card">
+            <img src="img/animaniacs vol 3.jpg" alt="Animaniacs Vol 3">
+            <a href="#"><h3>Animaniacs - (Vol Three)</h3></a>
+            <h3>£9.99</h3>
+            <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <a href="#" class="review-link">(5)</a>
+           </div>
+           <div class="cartbtn">
+             <button class="add-cart cart2">Add to Cart</button>
+             </div>
+          </div>
+        </div>
+        <div class="card-column">
+          <div class="card">
+            <img src="img/doom patrol.jpg" alt="Doom Patrol - Season One">
+        <a href="#"><h3>Doom Patrol - (Season One)</h3></a>
+        <h3>£19.99</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(9)</a>
+       </div>
+       <div class="cartbtn">
+         <button class="add-cart cart3">Add to Cart</button>
+         </div>
+          </div>
+        </div>
+        <div class="card-column">
+          <div class="card"><img src="img/my fair lady.jpg" alt="My Fair Lady">
+            <a href="#"><h3>My Fair Lady</h3></a>
+            <h3>£2.99</h3>
+            <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <a href="#" class="review-link">(3)</a>
+           </div>
+           <div class="cartbtn">
+             <button class="add-cart cart4">Add to Cart</button>
+             </div></div>
+        </div>
+        <div class="card-column">
+            <div class="card">
+                <img src="img/candyman.jpg" alt="Candyman">
+                <a href="#"><h3>Candyman</h3></a>
+                <h3>£11.99</h3>
+                <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <a href="#" class="review-link">(99)</a>
+               </div>
+               <div class="cartbtn">
+                 <button class="add-cart cart5">Add to Cart</button>
+                 </div>
+                </div>
+          </div>
+          <div class="card-column">
+            <div class="card">
+                <img src="img/ringu.jpg" alt="Ring">
+                <a href="#"><h3>Ring</h3></a>
+                <h3>£6.66</h3>
+                <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <a href="#" class="review-link">(666)</a>
+               </div>
+               <div class="cartbtn">
+                 <button class="add-cart cart6">Add to Cart</button>
+                 </div>
+                </div>
+          </div>
+          <div class="card-column">
+            <div class="card">
+                <img src="img/eurovision.jpg" alt="Eurovision">
+        <a href="#"><h3>Eurovision - Contest of Fire and Ice</h3></a>
+        <h3>£15.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(8)</a>
+       </div>
+       <div class="cartbtn">
+         <button class="add-cart cart7">Add to Cart</button>
+         </div>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card">
+                <img src="img/annie get your gun.jpg" alt="Annie Get Your Gun">
+        <a href="#"><h3>Annie Get Your Gun</h3></a>
+        <h3>£6.66</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(110)</a>
+       </div>
+       <div class="cartbtn">
+         <button class="add-cart cart8">Add to Cart</button>
+         </div>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card">
+                <img src="img/hot fuzz.jpg" alt="Hot Fuzz">
+        <a href="#"><h3>Hot Fuzz</h3></a>
+        <h3>£5.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(80)</a>
+       </div>
+       <div class="cartbtn">
+         <button class="add-cart cart9">Add to Cart</button>
+         </div>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card">
+                <img src="img/csi season two.jpg" alt="CSI">
+        <a href="#"><h3>CSI - (Season Two) </h3></a>
+        <h3>£10.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <a href="#" class="review-link">(199)</a>
+       </div>
+       <div class="cartbtn">
+         <button class="add-cart cart10">Add to Cart</button>
+         </div>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card">
+                <img src="img/austin powers.jpg" alt="Austin Powers">
+        <a href="#"><h3>Austin Powers</h3></a>
+        <h3>£0.69</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <a href="#" class="review-link">(169)</a>
+       </div>
+       <div class="cartbtn">
+         <button class="add-cart cart11">Add to Cart</button>
+         </div>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card">
+                <img src="img/greatest showman.jpg" alt="The Greatest Showman">
+        <a href="#"><h3>The Greatest Showman</h3></a>
+        <h3>£6.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(200)</a>
+       </div>
+       <div class="cartbtn">
+         <button class="add-cart cart12">Add to Cart</button>
+         </div>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card">
+                <img src="img/12 angry men.jpg" alt="12 Angry Men">
+        <a href="#"><h3>12 Angry Men</h3></a>
+        <h3>£5.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(120)</a>
+       </div>
+       <div class="cartbtn">
+         <button class="add-cart cart13">Add to Cart</button>
+         </div>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card">
+                <img src="img/jesus christ superstar.jpg" alt="Jesus Christ Superstar">
+        <a href="#"><h3>Jesus Christ Superstar</h3></a>
+        <h3>£3.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(50)</a>
+       </div>
+       <div class="cartbtn">
+         <button class="add-cart cart14">Add to Cart</button>
+         </div>
+            </div>
+          </div>
+          <div class="card-column">
+              <div class="card">
+                <img src="img/bill and teds excellent adventure.jpg" alt="Bill and Ted">
+        <a href="#"><h3>Bill and Ted's Excellent Adventure</h3></a>
+        <h3>£3.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(42)</a>
+       </div>
+       <div class="cartbtn">
+         <button class="add-cart cart15">Add to Cart</button>
+         </div>
+              </div>
+            </div>
+            <div class="card-column">
+              <div class="card">
+                <img src="img/wuthering heights.jpg" alt="Wuthering Heights">
+                <a href="#"><h3>Wuthering Heights</h3></a>
+                <h3>£4.00</h3>
+                <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <a href="#" class="review-link">(15)</a>
+               </div>
+               <div class="cartbtn">
+                 <button class="add-cart cart16">Add to Cart</button>
+                 </div>
+              </div>
+            </div>
+            <div class="card-column">
+              <div class="card">
+                <img src="img/boothnath.jpg" alt="boothnath">
+                <a href="#"><h3>Boothnath</h3></a>
+                 <h3>£7.99</h3>
+                 <div class="stars">
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <a href="#" class="review-link">(300)</a>
+                </div>
+                <div class="cartbtn">
+                <button class="add-cart cart17">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-column">
+              <div class="card">
+                <img src="img/10 things i hate about you.jpg" alt="10 things I Hate About You">
+       <a href="#"><h3>10 things I Hate About You</h3></a>
+        <h3>£4.99</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <a href="#" class="review-link">(796)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart18">Add to Cart</button>
+       </div>
+              </div>
+            </div>
+            <div class="card-column">
+              <div class="card">
+                <img src="img/sonic 2.jpg" alt="Sonic the Hedgehog 2">
+                <a href="#"><h3>Sonic the Hedgehog 2</h3></a>
+                 <h3>£10.99</h3>
+                 <div class="stars">
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <a href="#" class="review-link">(1,290)</a>
+                </div>
+                <div class="cartbtn">
+                <button class="add-cart cart19">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-column">
+              <div class="card">
+                <img src="img/hannibal season one.jpg" alt="Hannibal - (Season One)">
+       <a href="#"><h3>Hannibal - (Season One)</h3></a>
+        <h3>£20.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(900)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart20">Add to Cart</button>
+       </div>
+              </div>
+            </div>
+            <div class="card-column">
+                <div class="card">
+                    <img src="img/101 dalmations.jpg" alt="101 Dalmations">
+       <a href="#"><h3>101 Dalmations</h3></a>
+        <h3>£10.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <a href="#" class="review-link">(1,000)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart21">Add to Cart</button>
+       </div>
+                </div>
+              </div>
+              <div class="card-column">
+                <div class="card">
+                    <img src="img/american pie.jpg" alt="American Pie">
+       <a href="#"><h3>American Pie</h3></a>
+        <h3>£2.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <a href="#" class="review-link">(2,069)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart22">Add to Cart</button>
+       </div>
+                </div>
+              </div>
+              <div class="card-column">
+                <div class="card">
+                    <img src="img/dgm season one p2.jpg" alt="D.Gray-man - (Season One)">
+       <a href="#"><h3>D.Gray-man - (Season One)</h3></a>
+        <h3>£25.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <a href="#" class="review-link">(245)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart23">Add to Cart</button>
+       </div>
+                </div>
+              </div>
+              <div class="card-column">
+                <div class="card">
+                    <img src="img/inception.jpg" alt="Inception">
+       <a href="#"><h3>Inception</h3></a>
+        <h3>£6.60</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <a href="#" class="review-link">(3,000)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart24">Add to Cart</button>
+       </div>
+                </div>
+              </div>
+              <div class="card-column">
+                  <div class="card">
+                    <img src="img/american gothic.jpg" alt="American Gothic">
+       <a href="#"><h3>American Gothic</h3></a>
+        <h3>£4.99</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <a href="#" class="review-link">(4,200)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart25">Add to Cart</button>
+       </div>
+                  </div>
+                </div>
+                <div class="card-column">
+                  <div class="card">
+                    <img src="img/bride and prejudice.jpg" alt="Bride and Prejudice">
+       <a href="#"><h3>Bride and Prejudice</h3></a>
+        <h3>£7.99</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(825)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart26">Add to Cart</button>
+       </div>
+                  </div>
+                </div>
+                <div class="card-column">
+                  <div class="card">
+                    <img src="img/hannah montana.jpg" alt="Hannah Montana">
+       <a href="#"><h3>Hannah Montana</h3></a>
+        <h3>£2.99</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <a href="#" class="review-link">(80)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart27">Add to Cart</button>
+       </div>
+                  </div>
+                </div>
+                <div class="card-column">
+                  <div class="card">
+                    <img src="img/legally blonde.jpg" alt="Legally Blonde">
+       <a href="#"><h3>Legally Blonde</h3></a>
+        <h3>£5.99</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(2,000)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart28">Add to Cart</button>
+       </div>
+                  </div>
+                </div>
+                <div class="card-column">
+                  <div class="card">
+                    <img src="img/interview with a vampire.jpg" alt="Interview with a Vampire">
+       <a href="#"><h3>Interview With a Vampire</h3></a>
+        <h3>£10.00</h3>
+        <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <a href="#" class="review-link">(1,820)</a>
+       </div>
+       <div class="cartbtn">
+       <button class="add-cart cart29">Add to Cart</button>
+       </div>
+                  </div>
+                </div>
+                <div class="card-column">
+                  <div class="card"><img src="img/lord of the rings fellowship of the ring.jpg" alt="Fellowship of the Ring">
+                    <a href="#"><h3>Lord of the Rings: Fellowship of the Ring</h3></a>
+                     <h3>£15.00</h3>
+                     <div class="stars">
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star"></span>
+                     <a href="#" class="review-link">(3,680)</a>
+                    </div>
+                    <div class="cartbtn">
+                    <button class="add-cart cart30">Add to Cart</button>
+                    </div></div>
+                </div>
+                <div class="card-column">
+                    <div class="card"><img src="img/jujutsu kaisen.jpg" alt="Jujutsu Kaisen">
+                        <a href="#"><h3>Jujutsu Kaisen - (Season One)</h3></a>
+                         <h3>£25.00</h3>
+                         <div class="stars">
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <a href="#" class="review-link">(63)</a>
+                        </div>
+                        <div class="cartbtn">
+                        <button class="add-cart cart31">Add to Cart</button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card-column">
+                    <div class="card"><img src="img/supernatural season eleven.jpg" alt="Supernatural - (Season Eleven)">
+                        <a href="#"><h3>SuperNatural - (Season Eleven)</h3></a>
+                         <h3>£35.00</h3>
+                         <div class="stars">
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star"></span>
+                         <span class="fa fa-star"></span>
+                         <span class="fa fa-star"></span>
+                         <a href="#" class="review-link">(128)</a>
+                        </div>
+                        <div class="cartbtn">
+                        <button class="add-cart cart32">Add to Cart</button>
+                        </div></div>
+                  </div>
+      </div>
+       
+    </section> 
+
+    <div id="loadMore" class="loadMore">Load More</div>
+  </div>
+
+  <footer>
+   <div class="footer-row">
+      <div class="footer-column">
+         <h3>Help & Information</h3>
+         <li><a href="/contactus.html">Contact Us</a></li>
+         <li><a href="#">Returns</a></li>
+         <li><a href="#">UK Delivery</a></li>
+         <li><a href="#">International Delivery</a></li>
+      </div>
+      <div class="footer-column">
+      <h3>About Us</h3>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Company Information</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Cookie Policy</a></li>
+      </div>
+      <div class="footer-column">
+         <h3>Keep in Touch</h3>
+         <div class="socials">
+            <a href="#"><img src="/img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/img/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="/img/youtube.png" alt="Youtube"></a>
+            <a href="#"><img src="/img/Instagram.png" alt="Instagram"></a>
+         </div>
+      </div>
+      <div class="footer-column">
+         <h3>Newsletter</h3>
+         <div class="newsletter">
+            <p>Sign Up to our Newsletter!</p>
+            <br>
+            <div class="email">
+            <input type="email" id="email" name="email" placeholder="Enter your Email Address">
+            </div>
+         </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; Devflix 2022</p>
+    </div>
+</footer>
+
+    <script src="js/index.js"></script> 
+  </body>
+</html>
