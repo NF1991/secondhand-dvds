@@ -62,81 +62,82 @@ function plusSlides(n) {
 
 // cart functionality
 
-// let cart = document.querySelectorAll('.add-cart');
 
-// let products = [
-//     {
-//         name: 'Ash vs Evil Dead - (Season One)',
-//         tag: 'ashvevildead',
-//         price: 6.69,
-//         inCart: 0
-//     },
+let cart = document.querySelectorAll('.add-cart');
 
-//     {
-//         name: 'Animaniacs - (Vol 3)',
-//         tag: 'animaniacs',
-//         price: 9.99,
-//         inCart: 0
-//     },
+let products = [
+    {
+        name: 'Ash vs Evil Dead - (Season One)',
+        tag: 'ashvevildead',
+        price: 6.69,
+        inCart: 0
+    },
 
-//     {
-//         name: 'Doom Patrol - (Season One)',
-//         tag: 'doompatrol',
-//         price: 19.99,
-//         inCart: 0
-//     },
+    {
+        name: 'Animaniacs - (Vol 3)',
+        tag: 'animaniacs',
+        price: 9.99,
+        inCart: 0
+    },
 
-//     {
-//         name: 'My Fair Lady',
-//         tag: 'myfairlady',
-//         price: 2.99,
-//         inCart: 0
-//     },
+    {
+        name: 'Doom Patrol - (Season One)',
+        tag: 'doompatrol',
+        price: 19.99,
+        inCart: 0
+    },
+
+    {
+        name: 'My Fair Lady',
+        tag: 'myfairlady',
+        price: 2.99,
+        inCart: 0
+    },
 
     
 
-// ]
+]
 
-// for (let i=0; i < cart.length; i++) {
-//   cart[i].addEventListener('click', () => {
-//     cartNumbers(products[i]);
-//   })
-// }
+for (let i=0; i < cart.length; i++) {
+  cart[i].addEventListener('click', () => {
+    cartNumbers(products[i]);
+  })
+}
 
-// function onLoadCartNumbers() {
-//     let productNumbers = localStorage.getItem('cartNumbers');
+function onLoadCartNumbers() {
+    let productNumbers = localStorage.getItem('cartNumbers');
 
-//     if(productNumbers){
-//         document.querySelector ('.fa-layers-counter').textContent = productNumbers;
-//     }
-// }
-// function cartNumbers(product) {
-//     let productNumbers = localStorage.getItem('cartNumbers')
+    if(productNumbers){
+        document.querySelector ('.fa-layers-counter').textContent = productNumbers;
+    }
+}
+function cartNumbers(product) {
+    let productNumbers = localStorage.getItem('cartNumbers')
 
-//     productNumbers = parseInt(productNumbers)
+    productNumbers = parseInt(productNumbers)
 
-//     if (productNumbers) {
-//         localStorage.setItem('cartNumbers', productNumbers + 1);
-//         document.querySelector ('.fa-layers-counter').textContent = productNumbers + 1;
-//     } else  {
-//         localStorage.setItem('cartNumbers', 1);
-//     document.querySelector ('.fa-layers-counter').textContent =1;
-// }
+    if (productNumbers) {
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector ('.fa-layers-counter').textContent = productNumbers + 1;
+    } else  {
+        localStorage.setItem('cartNumbers', 1);
+    document.querySelector ('.fa-layers-counter').textContent =1;
+}
 
-//     setItems(product);
-// }
-//   function setItem(product) {
-//     let cartItems = localStorage.getItem('productsInCart')
-//     cartItems = JSON.parse(cartItems);
-//     if (cartItems != null) {
-//         cartItems[product.tag].inCart += 1;
-//     }
-//     product.inCart = 1;
-//     cartItems = {
-//         [product.tag]: product
-//     }
+    setItems(product);
+}
+  function setItem(product) {
+    let cartItems = localStorage.getItem('productsInCart')
+    cartItems = JSON.parse(cartItems);
+    if (cartItems != null) {
+        cartItems[product.tag].inCart += 1;
+    }
+    product.inCart = 1;
+    cartItems = {
+        [product.tag]: product
+    }
     
-//     localStorage.setItem("productsInCart", JSON.stringify (cartItems));
-//   }
+    localStorage.setItem("productsInCart", JSON.stringify (cartItems));
+  }
 
-// onLoadCartNumbers();
+onLoadCartNumbers();
